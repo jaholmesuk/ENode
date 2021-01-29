@@ -1,0 +1,66 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "northeurope"
+        },
+        "networkInterfaceName": {
+            "value": "energi-neu-node01763"
+        },
+        "networkSecurityGroupName": {
+            "value": "energi-neu-node01-nsg"
+        },
+        "networkSecurityGroupRules": {
+            "value": []
+        },
+        "subnetName": {
+            "value": "AppSubnet"
+        },
+        "virtualNetworkId": {
+            "value": "/subscriptions/626cfe49-42f7-458c-a20b-55a5ceee249c/resourceGroups/core-vnet-neu/providers/Microsoft.Network/virtualNetworks/CoreVNet"
+        },
+        "publicIpAddressName": {
+            "value": "energi-neu-node01-ip"
+        },
+        "publicIpAddressType": {
+            "value": "Static"
+        },
+        "publicIpAddressSku": {
+            "value": "Standard"
+        },
+        "virtualMachineName": {
+            "value": "energi-neu-node01"
+        },
+        "virtualMachineComputerName": {
+            "value": "energi-neu-node01"
+        },
+        "virtualMachineRG": {
+            "value": "core-vnet-neu"
+        },
+        "osDiskType": {
+            "value": "StandardSSD_LRS"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_B2s"
+        },
+        "adminUsername": {
+            "value": "azureuser"
+        },
+        "diagnosticsStorageAccountName": {
+            "value": "corevnetneudiag"
+        },
+        "diagnosticsStorageAccountId": {
+            "value": "Microsoft.Storage/storageAccounts/corevnetneudiag"
+        },
+        "diagnosticsStorageAccountType": {
+            "value": "Standard_LRS"
+        },
+        "diagnosticsStorageAccountKind": {
+            "value": "Storage"
+        },
+        "zone": {
+            "value": "1"
+        }
+    }
+}
