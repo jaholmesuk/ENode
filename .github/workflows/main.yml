@@ -21,6 +21,7 @@ jobs:
         resourceGroupName: ${{ secrets.AZRG }}
         template: ./node.json
         parameters: ./node-params.json
-
+        parameters: adminPublicKey= ${{PUBLICKEY }}
+      
       # output containerName variable from template
     - run: echo ${{ steps.deploy.outputs.containerName }}
