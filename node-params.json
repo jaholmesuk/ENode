@@ -6,10 +6,10 @@
             "value": "northeurope"
         },
         "networkInterfaceName": {
-            "value": "energi-neu-node01763"
+            "value": "enode-neu-01-nic"
         },
         "networkSecurityGroupName": {
-            "value": "energi-neu-node01-nsg"
+            "value": "enode-neu-01-nsg"
         },
         "networkSecurityGroupRules": {
             "value": []
@@ -21,7 +21,7 @@
             "value": "/subscriptions/626cfe49-42f7-458c-a20b-55a5ceee249c/resourceGroups/core-vnet-neu/providers/Microsoft.Network/virtualNetworks/CoreVNet"
         },
         "publicIpAddressName": {
-            "value": "energi-neu-node01-ip"
+            "value": "enode-neu-01-ip"
         },
         "publicIpAddressType": {
             "value": "Static"
@@ -30,10 +30,10 @@
             "value": "Standard"
         },
         "virtualMachineName": {
-            "value": "energi-neu-node01"
+            "value": "enode-neu-01"
         },
         "virtualMachineComputerName": {
-            "value": "energi-neu-node01"
+            "value": "enode-neu-01"
         },
         "virtualMachineRG": {
             "value": "core-vnet-neu"
