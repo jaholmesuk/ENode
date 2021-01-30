@@ -20,28 +20,7 @@ jobs:
         subscriptionId: ${{ secrets.AZSUB }}
         resourceGroupName: ${{ secrets.AZRG }}
         template: ./node.json
-        parameters:
-          location=northeurope
-          networkInterfaceName=enode-neu-01-nic
-          networkSecurityGroupName=enode-neu-01-nsg
-          networkSecurityGroupRules=[]
-          subnetName=AppSubnet
-          virtualNetworkId=/subscriptions/626cfe49-42f7-458c-a20b-55a5ceee249c/resourceGroups/core-vnet-neu/providers/Microsoft.Network/virtualNetworks/CoreVNet
-          publicIpAddressName=enode-neu-01-ip
-          publicIpAddressType=Static
-          publicIpAddressSku=Standard
-          virtualMachineName=enode-neu-01
-          virtualMachineComputerName=enode-neu-01
-          virtualMachineRG=core-vnet-neu
-          osDiskType=StandardSSD_LRS
-          virtualMachineSize=Standard_B2s
-          adminUsername=azureuser
-          adminpublicKey= ${{ secrets.publickey}}
-          diagnosticsStorageAccountName=corevnetneudiag
-          diagnosticsStorageAccountId=Microsoft.Storage/storageAccounts/corevnetneudiag
-          diagnosticsStorageAccountType=Standard_LRS
-          diagnosticsStorageAccountKind=Storage
-          zone=1
+        parameters: location=northeurope,networkSecurityGroupName=enode-neu-01-nsg,networkInterfaceName=enode-neu-01-nic,networkSecurityGroupRules=[],subnetName=AppSubnet,virtualNetworkId=/subscriptions/626cfe49-42f7-458c-a20b-55a5ceee249c/resourceGroups/core-vnet-neu/providers/Microsoft.Network/virtualNetworks/CoreVNet,publicIpAddressName=enode-neu-01-ip,publicIpAddressType=Static,publicIpAddressSku=Standard,virtualMachineName=enode-neu-01,virtualMachineComputerName=enode-neu-01,virtualMachineRG=core-vnet-neu,osDiskType=StandardSSD_LRS,virtualMachineSize=Standard_B2s,adminUsername=azureuser,adminpublicKey= ${{ secrets.publickey}},diagnosticsStorageAccountName=corevnetneudiag,diagnosticsStorageAccountId=Microsoft.Storage/storageAccounts/corevnetneudiag,diagnosticsStorageAccountType=Standard_LRS,diagnosticsStorageAccountKind=Storage,zone=1
           
       # output containerName variable from template
     - run: echo ${{ steps.deploy.outputs.containerName }}
