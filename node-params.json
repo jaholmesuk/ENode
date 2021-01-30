@@ -47,13 +47,6 @@
         "adminUsername": {
             "value": "azureuser"
         },
-        "adminpublickey": {
-            "reference": {
-                "keyVault": {
-                "id": "/subscriptions/626cfe49-42f7-458c-a20b-55a5ceee249c/resourceGroups/cio-mgmt/providers/Microsoft.KeyVault/vaults/ciomgmtkeyvaultneu"
-                },
-                "secretName": "shui"
-        }
         "diagnosticsStorageAccountName": {
             "value": "corevnetneudiag"
         },
@@ -68,6 +61,14 @@
         },
         "zone": {
             "value": "1"
+        },
+        "adminpublickey": {
+            "reference": {
+                "keyVault": {
+                "id": "/subscriptions/626cfe49-42f7-458c-a20b-55a5ceee249c/resourceGroups/cio-mgmt/providers/Microsoft.KeyVault/vaults/ciomgmtkeyvaultneu"
+                },
+                "secretName": "shui"
         }
     }
+}
 }
